@@ -6,7 +6,7 @@ const botRequestClient = axios.create({
 	httpAgent
 });
 botRequestClient.defaults.timeout = 10000;
-let url = 'http://dummy-service:3000/timer/5000'
+let url = 'http://dummy-service:3000'
 const app = express();
 const port = 3000;
 app.get('/check', (req, res) => {
